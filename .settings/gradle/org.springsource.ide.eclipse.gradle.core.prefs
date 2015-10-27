@@ -1,5 +1,5 @@
 #org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
-#Mon Oct 26 16:45:59 PDT 2015
-build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;core;desktop;
+#Mon Oct 26 17:00:42 PDT 2015
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;core;desktop;overlap2d-runtime-libgdx-master;
 org.springsource.ide.eclipse.gradle.linkedresources=
 org.springsource.ide.eclipse.gradle.rootprojectloc=
