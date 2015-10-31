@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.uwsoft.editor.renderer.SceneLoader;
@@ -19,6 +20,10 @@ public class MainGame extends ApplicationAdapter {
 	private SceneLoader sl;
 	private Viewport vp;
 	
+	private SceneLoader sl2;
+	private Viewport vp2;
+	private Stage stage;
+	
 	SpriteAnimationStateComponent ss;
 	TransformComponent tf;
 	
@@ -30,14 +35,18 @@ public class MainGame extends ApplicationAdapter {
 		vp = new FitViewport(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		sl.loadScene("MainScene", vp);
 		
+		sl2 = new SceneLoader();
+		vp2 = new FitViewport(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		sl2.loadScene("playscene", vp2);
+		
 		ss =  ComponentRetriever.get(
-				sl.entityFactory.getEntityByUniqueId(40), SpriteAnimationStateComponent.class);
-		tf = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(40), TransformComponent.class);
+				sl.entityFactory.getEntityByUniqueId(23), SpriteAnimationStateComponent.class);
+		tf = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(23), TransformComponent.class);
 	}
 
 	@Override
 	public void render () {
-		Gdx.gl.glClearColor(1, 0, 0, 1);
+		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		sl.getEngine().update(Gdx.graphics.getDeltaTime());
 		
@@ -47,18 +56,35 @@ public class MainGame extends ApplicationAdapter {
 		
 		if(Gdx.input.isKeyPressed(Keys.DOWN)) {
 			tf.y -= 1f;
+			
+		}
+		if(Gdx.input.isTouched()){
+			Gdx.input.setInputProcessor(null);
+			sl2.getEngine().update(Gdx.graphics.getDeltaTime());
 		}
 		
-		camera();
+		if(Gdx.input.isKeyPressed(Keys.UP)) {
+			tf.y += 1f;
+		}
+		
+		if(Gdx.input.isKeyPressed(Keys.LEFT)) {
+			tf.x -= 1f;
+		}
+		
+		if(Gdx.input.isKeyPressed(Keys.RIGHT)) {
+			tf.x += 1f;
+		}
+		
+		//camera();
 	}
 	
 	public void animation() {
 		ss.paused = ss.paused ? false : true;
 	}
 	
-	public void camera() {
+	/*public void camera() {
 		cam = (OrthographicCamera)vp.getCamera();
 		if(Gdx.input.isKeyPressed(Keys.RIGHT))
 			cam.position.x += 1;
-	}
+	}*/
 }
