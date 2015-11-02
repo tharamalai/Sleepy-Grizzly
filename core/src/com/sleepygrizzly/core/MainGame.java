@@ -82,7 +82,7 @@ public class MainGame extends ApplicationAdapter {
 		ss.paused = ss.paused ? false : true;
 	}
 	
-	/*public void camera() {
+/*	public void camera() {
 		cam = (OrthographicCamera)vp.getCamera();
 		if(Gdx.input.isKeyPressed(Keys.RIGHT))
 			cam.position.x += 1;

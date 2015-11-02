@@ -7,8 +7,8 @@ import com.sleepygrizzly.core.MainGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.width = 800;
-		config.height = 491;
+		config.width = 1024;
+		config.height = 568;
 		new LwjglApplication(new MainGame(), config);
 	}
 }

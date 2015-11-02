@@ -1,0 +1,27 @@
+
+pack.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CraggyIce
+  rotate: false
+  xy: 1503, 698
+  size: 485, 311
+  orig: 485, 311
+  offset: 0, 0
+  index: -1
+Sid-3-icon
+  rotate: false
+  xy: 1, 1
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+iceberg
+  rotate: false
+  xy: 1, 259
+  size: 1500, 750
+  orig: 1500, 750
+  offset: 0, 0
+  index: -1
