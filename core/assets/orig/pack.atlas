@@ -6,245 +6,252 @@ filter: Linear,Linear
 repeat: none
 CraggyIce
   rotate: false
-  xy: 2, 965
+  xy: 1504, 1735
   size: 485, 311
   orig: 485, 311
   offset: 0, 0
   index: -1
 Sid-3-icon
   rotate: false
-  xy: 518, 726
+  xy: 1444, 989
   size: 256, 256
   orig: 256, 256
   offset: 0, 0
   index: -1
 barrack
   rotate: false
-  xy: 500, 574
+  xy: 1702, 1095
   size: 250, 150
   orig: 250, 150
   offset: 0, 0
   index: -1
+bg
+  rotate: false
+  xy: 2, 377
+  size: 1139, 917
+  orig: 1139, 917
+  offset: 0, 0
+  index: -1
 cabinNight
   rotate: false
-  xy: 438, 408
+  xy: 1426, 823
   size: 225, 164
   orig: 225, 164
   offset: 0, 0
   index: -1
 car
   rotate: false
-  xy: 1805, 1374
+  xy: 1397, 114
   size: 158, 116
   orig: 158, 116
   offset: 0, 0
   index: -1
 cloud1Night
   rotate: false
-  xy: 1811, 1259
+  xy: 870, 29
   size: 177, 113
   orig: 177, 113
   offset: 0, 0
   index: -1
 cloud2Night
   rotate: false
-  xy: 1072, 1012
+  xy: 2, 20
   size: 93, 59
   orig: 93, 59
   offset: 0, 0
   index: -1
 fire
   rotate: false
-  xy: 2, 108
+  xy: 1143, 489
   size: 265, 252
   orig: 265, 252
   offset: 0, 0
   index: -1
 glow
   rotate: false
-  xy: 438, 583
+  xy: 1444, 1252
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 goldenSheep
   rotate: false
-  xy: 1817, 1191
+  xy: 1651, 721
   size: 81, 66
   orig: 81, 66
   offset: 0, 0
   index: -1
 groundGrass
   rotate: false
-  xy: 1072, 1174
+  xy: 1143, 385
   size: 373, 102
   orig: 373, 102
   offset: 0, 0
   index: -1
 heli
   rotate: false
-  xy: 1447, 1148
+  xy: 641, 34
   size: 227, 108
   orig: 227, 108
   offset: 0, 0
   index: -1
 hill1
   rotate: false
-  xy: 1504, 1258
+  xy: 1653, 789
   size: 305, 97
   orig: 305, 97
   offset: 0, 0
   index: -1
 hill1Night
   rotate: false
-  xy: 1072, 1073
+  xy: 1653, 888
   size: 308, 99
   orig: 308, 99
   offset: 0, 0
   index: -1
 hill2Night
   rotate: false
-  xy: 2, 732
+  xy: 585, 144
   size: 514, 231
   orig: 514, 231
   offset: 0, 0
   index: -1
 hill3Night
   rotate: false
-  xy: 489, 1087
+  xy: 2, 186
   size: 581, 189
   orig: 581, 189
   offset: 0, 0
   index: -1
 hill4Night
   rotate: false
-  xy: 2, 627
+  xy: 2, 81
   size: 496, 103
   orig: 496, 103
   offset: 0, 0
   index: -1
 hill5Night
   rotate: false
-  xy: 489, 984
+  xy: 1504, 1247
   size: 462, 101
   orig: 462, 101
   offset: 0, 0
   index: -1
 iceberg
   rotate: false
-  xy: 2, 1278
+  xy: 2, 1296
   size: 1500, 750
   orig: 1500, 750
   offset: 0, 0
   index: -1
 lamp1
   rotate: false
-  xy: 665, 453
+  xy: 1991, 1927
   size: 38, 119
   orig: 38, 119
   offset: 0, 0
   index: -1
 miniPond
   rotate: false
-  xy: 1072, 981
+  xy: 500, 155
   size: 74, 29
   orig: 74, 29
   offset: 0, 0
   index: -1
 ninja
   rotate: false
-  xy: 1916, 1908
+  xy: 1426, 701
   size: 122, 120
   orig: 122, 120
   offset: 0, 0
   index: -1
 rainDrop
   rotate: false
-  xy: 269, 332
+  xy: 641, 4
   size: 13, 28
   orig: 13, 28
   offset: 0, 0
   index: -1
 sheep
   rotate: false
-  xy: 1916, 1739
+  xy: 1410, 517
   size: 80, 70
   orig: 80, 70
   offset: 0, 0
   index: -1
 tree3
   rotate: false
-  xy: 1504, 1357
+  xy: 1143, 1008
   size: 299, 286
   orig: 299, 286
   offset: 0, 0
   index: -1
 treeBack1
   rotate: false
-  xy: 1805, 1492
+  xy: 1397, 232
   size: 160, 151
   orig: 160, 151
   offset: 0, 0
   index: -1
 treeFront1
   rotate: false
-  xy: 2, 362
+  xy: 1143, 743
   size: 281, 263
   orig: 281, 263
   offset: 0, 0
   index: -1
 treeFront2
   rotate: false
-  xy: 1504, 1645
+  xy: 1504, 1350
   size: 410, 383
   orig: 410, 383
   offset: 0, 0
   index: -1
 treeback2
   rotate: false
-  xy: 953, 975
+  xy: 1410, 589
   size: 117, 110
   orig: 117, 110
   offset: 0, 0
   index: -1
 ufocrash
   rotate: false
-  xy: 2, 2
+  xy: 1702, 989
   size: 246, 104
   orig: 246, 104
   offset: 0, 0
   index: -1
 watertower
   rotate: false
-  xy: 776, 748
+  xy: 1101, 141
   size: 141, 234
   orig: 141, 234
   offset: 0, 0
   index: -1
 windMain
   rotate: false
-  xy: 1382, 1089
+  xy: 1916, 1650
   size: 24, 83
   orig: 24, 83
   offset: 0, 0
   index: -1
 windRotor
   rotate: false
-  xy: 1916, 1811
+  xy: 1550, 726
   size: 99, 95
   orig: 99, 95
   offset: 0, 0
   index: -1
 windmillMain
   rotate: false
-  xy: 285, 390
+  xy: 1244, 148
   size: 151, 235
   orig: 151, 235
   offset: 0, 0
   index: -1
 windmillRotating
   rotate: false
-  xy: 1676, 1116
+  xy: 500, 2
   size: 139, 140
   orig: 139, 140
   offset: 0, 0

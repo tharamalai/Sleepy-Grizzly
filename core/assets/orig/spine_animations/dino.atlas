@@ -1,0 +1,34 @@
+
+sheep.png
+size: 596,693
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 1, 1
+  size: 596,693
+  orig: 596,693
+  offset: 0, 0
+  index: -1
+ear
+  rotate: false
+  xy: 597, 1
+  size: 596,693
+  orig: 596,693
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 1193, 1
+  size: 596,693
+  orig: 596,693
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 1, 694
+  size: 596,693
+  orig: 596,693
+  offset: 0, 0
+  index: -1

@@ -15,6 +15,16 @@ import com.uwsoft.editor.renderer.components.TransformComponent;
 import com.uwsoft.editor.renderer.components.sprite.SpriteAnimationStateComponent;
 import com.uwsoft.editor.renderer.utils.ComponentRetriever;
 
+/* maingame
+ * menuscene
+ * playscene
+ * interruptscene
+ * scorescene
+ * bear
+ * fish
+ * 
+*/
+
 public class MainGame extends ApplicationAdapter {
 	
 	private SceneLoader sl;
@@ -40,8 +50,8 @@ public class MainGame extends ApplicationAdapter {
 		sl2.loadScene("playscene", vp2);
 		
 		ss =  ComponentRetriever.get(
-				sl.entityFactory.getEntityByUniqueId(23), SpriteAnimationStateComponent.class);
-		tf = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(23), TransformComponent.class);
+				sl.entityFactory.getEntityByUniqueId(7), SpriteAnimationStateComponent.class);
+		tf = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(7), TransformComponent.class);
 	}
 
 	@Override
@@ -68,11 +78,11 @@ public class MainGame extends ApplicationAdapter {
 		}
 		
 		if(Gdx.input.isKeyPressed(Keys.LEFT)) {
-			tf.x -= 1f;
+			tf.x = 5f;
 		}
 		
 		if(Gdx.input.isKeyPressed(Keys.RIGHT)) {
-			tf.x += 1f;
+			tf.x = 500f;
 		}
 		
 		//camera();
