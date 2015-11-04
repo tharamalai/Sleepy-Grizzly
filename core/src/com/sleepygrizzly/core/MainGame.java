@@ -37,6 +37,9 @@ public class MainGame extends ApplicationAdapter {
 	SpriteAnimationStateComponent ss;
 	TransformComponent tf;
 	
+	SpriteAnimationStateComponent ss2;
+	TransformComponent tf2;
+	
 	OrthographicCamera cam;
 	
 	@Override
@@ -52,6 +55,9 @@ public class MainGame extends ApplicationAdapter {
 		ss =  ComponentRetriever.get(
 				sl.entityFactory.getEntityByUniqueId(7), SpriteAnimationStateComponent.class);
 		tf = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(7), TransformComponent.class);
+		
+		
+		
 	}
 
 	@Override
@@ -66,6 +72,9 @@ public class MainGame extends ApplicationAdapter {
 		
 		if(Gdx.input.isKeyPressed(Keys.DOWN)) {
 			tf.y -= 1f;
+			ss2 =  ComponentRetriever.get(
+					sl.entityFactory.getEntityByUniqueId(6), SpriteAnimationStateComponent.class);
+			tf2 = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(6), TransformComponent.class);
 			
 		}
 		if(Gdx.input.isTouched()){

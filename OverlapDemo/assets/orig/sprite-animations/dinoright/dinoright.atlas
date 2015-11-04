@@ -1,0 +1,33 @@
+dinoright.png
+size: 596,693
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+dinoright0001
+  rotate: false
+  xy: 1, 1
+  size: 596,693
+  orig: 596,693
+  offset: 0, 0
+  index: -1
+dinoright0002
+  rotate: false
+  xy: 597, 1
+  size: 596,693
+  orig: 596,693
+  offset: 0, 0
+  index: -1
+dinoright0003
+  rotate: false
+  xy: 1193, 1
+  size: 596,693
+  orig: 596,693
+  offset: 0, 0
+  index: -1
+dinoright0004
+  rotate: false
+  xy: 1, 693
+  size: 596,693
+  orig: 596,693
+  offset: 0, 0
+  index: -1
