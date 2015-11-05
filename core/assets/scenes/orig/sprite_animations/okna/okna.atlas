@@ -1,0 +1,54 @@
+okna.png
+size: 100,100
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+okna0001
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+okna0002
+  rotate: false
+  xy: 101, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+okna0003
+  rotate: false
+  xy: 201, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+okna0004
+  rotate: false
+  xy: 301, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+okna0005
+  rotate: false
+  xy: 401, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+okna0006
+  rotate: false
+  xy: 254, 296
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+okna0007
+  rotate: false
+  xy: 2, 2
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1

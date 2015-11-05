@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.sun.javafx.scene.traversal.Direction;
 import com.uwsoft.editor.renderer.SceneLoader;
 import com.uwsoft.editor.renderer.components.TransformComponent;
 import com.uwsoft.editor.renderer.components.sprite.SpriteAnimationStateComponent;
@@ -27,6 +28,9 @@ public class MainGame extends ApplicationAdapter {
 	SpriteAnimationStateComponent ss;
 	TransformComponent tf;
 	
+	SpriteAnimationStateComponent rr;
+	TransformComponent tr;
+	
 	OrthographicCamera cam;
 	
 	@Override
@@ -40,8 +44,12 @@ public class MainGame extends ApplicationAdapter {
 		sl2.loadScene("playscene", vp2);
 		
 		ss =  ComponentRetriever.get(
-				sl.entityFactory.getEntityByUniqueId(23), SpriteAnimationStateComponent.class);
-		tf = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(23), TransformComponent.class);
+				sl.entityFactory.getEntityByUniqueId(7), SpriteAnimationStateComponent.class);
+		tf = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(7), TransformComponent.class);
+		
+		rr =  ComponentRetriever.get(
+				sl.entityFactory.getEntityByUniqueId(6), SpriteAnimationStateComponent.class);
+		tr = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(6), TransformComponent.class);
 	}
 
 	@Override
@@ -68,11 +76,15 @@ public class MainGame extends ApplicationAdapter {
 		}
 		
 		if(Gdx.input.isKeyPressed(Keys.LEFT)) {
-			tf.x -= 1f;
+			tf.x = 1f;
 		}
-		
 		if(Gdx.input.isKeyPressed(Keys.RIGHT)) {
-			tf.x += 1f;
+			/*boolean flip = (getDirection() == Direction.LEFT);
+			SpriteBatch.draw(tr, flip ? tf.x+500f : tf.x, tf.y, flip ? -500f : 500f, 6);
+			tf.x = 500f;
+			tf.*/
+			tr.x = 400f;
+			
 		}
 		
 		//camera();
