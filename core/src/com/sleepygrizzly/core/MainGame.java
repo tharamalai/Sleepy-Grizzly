@@ -50,6 +50,7 @@ public class MainGame extends ApplicationAdapter {
 		rr =  ComponentRetriever.get(
 				sl.entityFactory.getEntityByUniqueId(6), SpriteAnimationStateComponent.class);
 		tr = ComponentRetriever.get(sl.entityFactory.getEntityByUniqueId(6), TransformComponent.class);
+		
 	}
 
 	@Override

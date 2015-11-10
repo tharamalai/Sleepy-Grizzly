@@ -1,0 +1,33 @@
+standybear.png
+size: 378,464
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+standybear0001
+  rotate: false
+  xy: 1, 1
+  size: 378,464
+  orig: 378,464
+  offset: 0, 0
+  index: -1
+standybear0002
+  rotate: false
+  xy: 379, 1
+  size: 378,464
+  orig: 378,464
+  offset: 0, 0
+  index: -1
+standybear0003
+  rotate: false
+  xy: 1, 465
+  size: 378,464
+  orig: 378,464
+  offset: 0, 0
+  index: -1
+standybear0004
+  rotate: false
+  xy: 379, 465
+  size: 378,464
+  orig: 378,464
+  offset: 0, 0
+  index: -1
