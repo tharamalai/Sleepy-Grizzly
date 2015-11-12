@@ -1,0 +1,145 @@
+sleepybear.png
+size: 548,344
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+sleepybear01
+  rotate: false
+  xy: 1, 1
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear02
+  rotate: false
+  xy: 549, 1
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear03
+  rotate: false
+  xy: 1097, 1
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear04
+  rotate: false
+  xy: 1645, 1
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear05
+ rotate: false
+  xy: 2193, 1
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear06
+  rotate: false
+  xy: 1, 345
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear07
+  rotate: false
+  xy: 549, 345
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear08
+  rotate: false
+  xy: 1097, 345
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear09
+  rotate: false
+  xy: 1645, 345
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear10
+  rotate: false
+  xy: 2193, 345
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear11
+  rotate: false
+  xy: 1, 689
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear12
+  rotate: false
+  xy: 549, 689
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear13
+  rotate: false
+  xy: 1097, 689
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear14
+  rotate: false
+  xy: 1645, 689
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear15
+  rotate: false
+  xy: 2193, 689
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear16
+  rotate: false
+  xy: 1, 1033
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear17
+  rotate: false
+  xy: 549, 1033
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear18
+  rotate: false
+  xy: 1097, 1033
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear19
+  rotate: false
+  xy: 1645, 1033
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1
+sleepybear20
+  rotate: false
+  xy: 2193, 1033
+  size: 548,344
+  orig: 548,344
+  offset: 0, 0
+  index: -1

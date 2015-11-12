@@ -1,0 +1,145 @@
+orange_R.png
+size: 364, 361
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+orange_R01
+  rotate: false
+  xy: 1, 1
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R02
+  rotate: false
+  xy: 365, 1
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R03
+  rotate: false
+  xy: 729, 1
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R04
+  rotate: false
+  xy: 1093, 1
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R05
+  rotate: false
+  xy: 1457, 1
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R06
+  rotate: false
+  xy: 1, 362
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R07
+  rotate: false
+  xy: 365, 362 
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R08
+  rotate: false
+  xy: 729, 362 
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R09
+  rotate: false
+  xy: 1093, 362 
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R010
+  rotate: false
+  xy: 1457, 362 
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R011
+  rotate: false
+  xy: 1, 723
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R012
+  rotate: false
+  xy: 365, 723
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R013
+  rotate: false
+  xy: 729, 723
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R014
+  rotate: false
+  xy: 1093, 723
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R015
+  rotate: false
+  xy: 1457, 723
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R016
+  rotate: false
+  xy: 1, 1084
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R017
+  rotate: false
+  xy: 365, 1084
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R018
+  rotate: false
+  xy: 729, 1084
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R019
+  rotate: false
+  xy: 1093, 1084
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1
+orange_R020
+  rotate: false
+  xy: 1457, 1084
+  size: 364, 361
+  orig: 364, 361
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,145 @@
+red_L.png
+size: 347,361
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+red_L01
+  rotate: false
+  xy: 1, 1
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L02
+  rotate: false
+  xy: 348, 1
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L03
+  rotate: false
+  xy: 695, 1
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L04
+  rotate: false
+  xy: 1042, 1
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L05
+  rotate: false
+  xy: 1389, 1
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L06
+  rotate: false
+  xy: 1, 362
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L07
+  rotate: false
+  xy: 348, 362
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L08
+  rotate: false
+  xy: 695, 362
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L09
+  rotate: false
+  xy: 1042, 362 
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L010
+  rotate: false
+  xy: 1389, 362 
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L011
+  rotate: false
+  xy: 1, 723
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L012
+  rotate: false
+  xy: 348, 723
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L013
+  rotate: false
+  xy: 695, 723
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L014
+  rotate: false
+  xy: 1042, 723
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L015
+  rotate: false
+  xy: 1389, 723
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L016
+  rotate: false
+  xy: 1, 1084
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L017
+  rotate: false
+  xy: 348, 1084
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L018
+  rotate: false
+  xy: 695, 1084
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L019
+  rotate: false
+  xy: 1042, 1084
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1
+red_L020
+  rotate: false
+  xy: 1389, 1084
+  size: 347,361
+  orig: 347,361
+  offset: 0, 0
+  index: -1

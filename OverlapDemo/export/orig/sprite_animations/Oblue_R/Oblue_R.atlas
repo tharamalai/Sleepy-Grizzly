@@ -1,0 +1,61 @@
+Oblue_R.png
+size: 261, 242
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Oblue_R01
+  rotate: false
+  xy: 1, 1
+  size: 261, 242
+  orig: 261, 242
+  offset: 0, 0
+  index: -1
+Oblue_R02
+  rotate: false
+  xy: 262, 1
+  size: 261, 242
+  orig: 261, 242
+  offset: 0, 0
+  index: -1
+Oblue_R03
+  rotate: false
+  xy: 523, 1
+  size: 261, 242
+  orig: 261, 242
+  offset: 0, 0
+  index: -1
+Oblue_R04
+  rotate: false
+  xy: 784, 1
+  size: 261, 242
+  orig: 261, 242
+  offset: 0, 0
+  index: -1
+Oblue_R05
+ rotate: false
+  xy: 1, 243
+  size: 261, 242
+  orig: 261, 242
+  offset: 0, 0
+  index: -1
+Oblue_R06
+  rotate: false
+  xy: 262, 243
+  size: 261, 242
+  orig: 261, 242
+  offset: 0, 0
+  index: -1
+Oblue_R07
+  rotate: false
+  xy: 523, 243
+  size: 261, 242
+  orig: 261, 242
+  offset: 0, 0
+  index: -1
+Oblue_R08
+  rotate: false
+  xy: 784, 243
+  size: 261, 242
+  orig: 261, 242
+  offset: 0, 0
+  index: -1

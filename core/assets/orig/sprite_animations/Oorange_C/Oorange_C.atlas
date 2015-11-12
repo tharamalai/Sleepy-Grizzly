@@ -1,0 +1,61 @@
+Oorange_C.png
+size: 234,242
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Oorange_C01
+  rotate: false
+  xy: 1, 1
+  size: 234,242
+  orig: 234,242
+  offset: 0, 0
+  index: -1
+Oorange_C02
+  rotate: false
+  xy: 235, 1
+  size: 234,242
+  orig: 234,242
+  offset: 0, 0
+  index: -1
+Oorange_C03
+  rotate: false
+  xy: 469, 1
+  size: 234,242
+  orig: 234,242
+  offset: 0, 0
+  index: -1
+Oorange_C04
+  rotate: false
+  xy: 703, 1
+  size: 234,242
+  orig: 234,242
+  offset: 0, 0
+  index: -1
+Oorange_C05
+ rotate: false
+  xy: 1, 243
+  size: 234,242
+  orig: 234,242
+  offset: 0, 0
+  index: -1
+Oorange_C06
+  rotate: false
+  xy: 235, 243
+  size: 234,242
+  orig: 234,242
+  offset: 0, 0
+  index: -1
+Oorange_C07
+  rotate: false
+  xy: 469, 243
+  size: 234,242
+  orig: 234,242
+  offset: 0, 0
+  index: -1
+Oorange_C08
+  rotate: false
+  xy: 703, 243
+  size: 234,242
+  orig: 234,242
+  offset: 0, 0
+  index: -1

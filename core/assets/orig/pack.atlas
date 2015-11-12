@@ -6,274 +6,294 @@ filter: Linear,Linear
 repeat: none
 CraggyIce
   rotate: false
-  xy: 804, 963
+  xy: 1504, 1397
   size: 485, 311
   orig: 485, 311
   offset: 0, 0
   index: -1
-Sid-3-icon
-  rotate: false
-  xy: 1603, 738
-  size: 256, 256
-  orig: 256, 256
-  offset: 0, 0
-  index: -1
 barrack
   rotate: false
-  xy: 585, 74
+  xy: 1793, 951
   size: 250, 150
   orig: 250, 150
   offset: 0, 0
   index: -1
 bearsleep
   rotate: false
-  xy: 2, 298
+  xy: 1175, 238
   size: 616, 406
   orig: 616, 406
   offset: 0, 0
   index: -1
 bearstandbranch
   rotate: false
-  xy: 1504, 1586
+  xy: 804, 184
   size: 369, 440
   orig: 369, 440
   offset: 0, 0
   index: -1
 bg
   rotate: false
-  xy: 2, 706
+  xy: 2, 56
   size: 800, 568
   orig: 800, 568
   offset: 0, 0
   index: -1
+bgbear
+  rotate: false
+  xy: 2, 626
+  size: 1024, 668
+  orig: 1024, 668
+  offset: 0, 0
+  index: -1
+bgpng
+  rotate: false
+  xy: 2, 626
+  size: 1024, 668
+  orig: 1024, 668
+  offset: 0, 0
+  index: -1
 cabinNight
   rotate: false
-  xy: 1223, 455
+  xy: 804, 18
   size: 225, 164
   orig: 225, 164
   offset: 0, 0
   index: -1
 car
   rotate: false
-  xy: 1591, 514
+  xy: 1793, 329
   size: 158, 116
   orig: 158, 116
   offset: 0, 0
   index: -1
 cloud1Night
   rotate: false
-  xy: 1223, 340
+  xy: 1581, 988
   size: 177, 113
   orig: 177, 113
   offset: 0, 0
   index: -1
 cloud2Night
   rotate: false
-  xy: 620, 645
+  xy: 1953, 386
   size: 93, 59
   orig: 93, 59
   offset: 0, 0
   index: -1
-fire
-  rotate: false
-  xy: 927, 85
-  size: 265, 252
-  orig: 265, 252
-  offset: 0, 0
-  index: -1
 glow
   rotate: false
-  xy: 1367, 996
+  xy: 2002, 1771
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 goldenSheep
   rotate: false
-  xy: 1916, 1473
+  xy: 1953, 318
   size: 81, 66
   orig: 81, 66
   offset: 0, 0
   index: -1
 groundGrass
   rotate: false
-  xy: 1434, 1097
+  xy: 1418, 134
   size: 373, 102
   orig: 373, 102
   offset: 0, 0
   index: -1
 heli
   rotate: false
-  xy: 1320, 621
+  xy: 1793, 447
   size: 227, 108
   orig: 227, 108
   offset: 0, 0
   index: -1
-hill1
-  rotate: false
-  xy: 620, 226
-  size: 305, 97
-  orig: 305, 97
-  offset: 0, 0
-  index: -1
 hill1Night
   rotate: false
-  xy: 1434, 996
+  xy: 1418, 33
   size: 308, 99
   orig: 308, 99
   offset: 0, 0
   index: -1
 hill2Night
   rotate: false
-  xy: 804, 730
+  xy: 1504, 1815
   size: 514, 231
   orig: 514, 231
   offset: 0, 0
   index: -1
 hill3Night
   rotate: false
-  xy: 2, 107
+  xy: 1440, 1103
   size: 581, 189
   orig: 581, 189
   offset: 0, 0
   index: -1
 hill4Night
   rotate: false
-  xy: 2, 2
+  xy: 1504, 1710
   size: 496, 103
   orig: 496, 103
   offset: 0, 0
   index: -1
 hill5Night
   rotate: false
-  xy: 804, 627
+  xy: 1504, 1294
   size: 462, 101
   orig: 462, 101
   offset: 0, 0
   index: -1
 iceberg
   rotate: false
-  xy: 2, 1276
+  xy: 2, 1296
   size: 1500, 750
   orig: 1500, 750
   offset: 0, 0
   index: -1
 lamp1
   rotate: false
-  xy: 837, 105
+  xy: 2002, 1650
   size: 38, 119
   orig: 38, 119
   offset: 0, 0
   index: -1
 miniPond
   rotate: false
-  xy: 1291, 1009
+  xy: 1968, 1366
   size: 74, 29
   orig: 74, 29
   offset: 0, 0
   index: -1
 ninja
   rotate: false
-  xy: 1751, 510
+  xy: 1311, 789
   size: 122, 120
   orig: 122, 120
   offset: 0, 0
   index: -1
 ppng
   rotate: false
-  xy: 620, 325
+  xy: 1440, 649
   size: 300, 300
   orig: 300, 300
   offset: 0, 0
   index: -1
 rainDrop
   rotate: false
-  xy: 1434, 1246
+  xy: 2020, 1933
   size: 13, 28
   orig: 13, 28
   offset: 0, 0
   index: -1
 sheep
   rotate: false
-  xy: 500, 35
+  xy: 1336, 20
   size: 80, 70
   orig: 80, 70
   offset: 0, 0
   index: -1
 tree3
   rotate: false
-  xy: 922, 339
+  xy: 1742, 663
   size: 299, 286
   orig: 299, 286
   offset: 0, 0
   index: -1
 treeBack1
   rotate: false
-  xy: 1875, 1638
+  xy: 1031, 31
   size: 160, 151
   orig: 160, 151
   offset: 0, 0
   index: -1
 treeFront1
   rotate: false
-  xy: 1320, 731
+  xy: 1028, 646
   size: 281, 263
   orig: 281, 263
   offset: 0, 0
   index: -1
 treeFront2
   rotate: false
-  xy: 1504, 1201
+  xy: 1028, 911
   size: 410, 383
   orig: 410, 383
   offset: 0, 0
   index: -1
 treeback2
   rotate: false
-  xy: 1809, 1089
+  xy: 1311, 677
   size: 117, 110
   orig: 117, 110
   offset: 0, 0
   index: -1
 ufocrash
   rotate: false
-  xy: 1603, 632
+  xy: 1793, 557
   size: 246, 104
   orig: 246, 104
   offset: 0, 0
   index: -1
 watertower
   rotate: false
-  xy: 1291, 1040
+  xy: 1193, 2
   size: 141, 234
   orig: 141, 234
   offset: 0, 0
   index: -1
 windMain
   rotate: false
-  xy: 1194, 254
+  xy: 2020, 1963
   size: 24, 83
   orig: 24, 83
   offset: 0, 0
   index: -1
 windRotor
   rotate: false
-  xy: 1916, 1541
+  xy: 1946, 221
   size: 99, 95
   orig: 99, 95
   offset: 0, 0
   index: -1
 windmillMain
   rotate: false
-  xy: 1875, 1791
+  xy: 1793, 92
   size: 151, 235
   orig: 151, 235
   offset: 0, 0
   index: -1
 windmillRotating
   rotate: false
-  xy: 1450, 479
+  xy: 1440, 961
   size: 139, 140
   orig: 139, 140
+  offset: 0, 0
+  index: -1
+
+pack2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Sid-3-icon
+  rotate: false
+  xy: 269, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+fire
+  rotate: false
+  xy: 2, 6
+  size: 265, 252
+  orig: 265, 252
+  offset: 0, 0
+  index: -1
+hill1
+  rotate: false
+  xy: 527, 161
+  size: 305, 97
+  orig: 305, 97
   offset: 0, 0
   index: -1
