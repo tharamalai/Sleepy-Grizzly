@@ -43,12 +43,12 @@ public class Bear {
 	}
 
 	public void move() {
-		if (Gdx.input.isKeyPressed(Keys.RIGHT)) {
-			bear.x += 1;
+		if (Gdx.input.isKeyJustPressed(Keys.RIGHT)) {
+			bear.x = 270;
 			bear.scaleX = -Math.abs(bear.scaleX);
 		}
-		if (Gdx.input.isKeyPressed(Keys.LEFT)) {
-			bear.x -= 1;
+		if (Gdx.input.isKeyJustPressed(Keys.LEFT)) {
+			bear.x = -50;
 			bear.scaleX = Math.abs(bear.scaleX);
 		}
 	}

@@ -14,16 +14,20 @@ public class CheckAction {
 	}
 
 	public boolean isTrueSide(String bearside, String pufferside) {
-		if (bearside.charAt(bearside.length() - 1) == (pufferside.charAt(pufferside.length() - 1))) {
+		if (bearside.charAt(bearside.length() - 1) != (pufferside.charAt(pufferside.length() - 1))) {
 			System.out.println("TRUE -- LL RR" + "  bearside: " + bearside + " | pufferside: " + pufferside);
 			score += 1;
 			System.out.println("Score:  " + score);
 			return true;
-		} else if (pufferside.charAt(pufferside.length() - 1) == 'C') {
+		} 
+		/*else if (pufferside.charAt(pufferside.length() - 1) == 'C') {
 			System.out.println("TRUE -- C" + "  bearside: " + bearside + " | pufferside: " + pufferside);
 			score += 1;
+			System.out.println("Score:  " + score);
 			return true;
-		} else {
+		
+		}*/ 
+		else {
 			System.out.println("FALSE -- " + "  bearside: " + bearside + " | pufferside: " + pufferside);
 			System.out.println("Score:(same)  " + score);
 			return false;

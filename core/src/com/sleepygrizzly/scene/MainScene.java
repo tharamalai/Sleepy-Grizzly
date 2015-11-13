@@ -18,8 +18,7 @@ public class MainScene extends Scene {
 
 	private float elapsedTime = 0;
 
-	Bear standybear_L;
-	Bear standybear_R;
+	Bear sleepybear;
 	CheckAction action;
 	String status = "playing";
 	PufferFish puffersample;
@@ -31,11 +30,8 @@ public class MainScene extends Scene {
 
 	public void create() {
 		scene1.loadScene("Playbearscene");
-		standybear_L = new Bear(scene1, "standybear_L", 9);
-		standybear_L.createBearID();
-		// standybear_L.createBearSprite("standybear");
-		standybear_R = new Bear(scene1, "standybear_R", 2);
-		standybear_R.createBearID();
+		sleepybear = new Bear(scene1, "standybear_R", 10);
+		sleepybear.createBearID();
 		// standybear_R.createBearSprite("standybear");
 		puffersample = new PufferFish(scene1, "puffer_NAM");
 		puffersample.randomFirstTime();
@@ -47,9 +43,9 @@ public class MainScene extends Scene {
 
 	public void render() {
 		elapsedTime += Gdx.graphics.getDeltaTime();
-		puffernow = puffersample.aquarium.get(0);
+		puffernow = puffersample.aquarium.element();
 		// batch.begin();
-		standybear_R.move();
+		sleepybear.move();
 		if (Gdx.input.isKeyJustPressed(Keys.LEFT)) {
 			// standybear_L.bear.x = -25f;
 			// standybear_L.bear.x = -10f;
@@ -58,18 +54,25 @@ public class MainScene extends Scene {
 			System.out.println("left  " + i);
 			i += 1;
 			if (action.isTrueSide("nam -- L", puffernow.namefish)) {
-				for (int i = 0; i < 8; i++) {
-					puffersample.aquarium.set(i, puffersample.aquarium.get(i + 1));
-					puffersample.aquarium.get(i).y += 200f;
+				puffersample.aquarium.remove();
+				for (PufferFish each: puffersample.aquarium) {
+					each.y += 114;
+					each.move();
 				}
+				puffersample.aquarium.poll();
 				puffersample.randomPuffer();
-			} else {
+			} 
+			else {
 				System.out.println("*******************\n" + "******Game Over****\n" + "*******************");
 				action.setScore(0);
+				//---------try 
+				puffersample.aquarium.poll();
+				puffersample.randomPuffer();
+				//
 
 			}
-			for (int i = 0; i < 10; i++) {
-				System.out.print(puffersample.aquarium.get(i).namefish + "-y-" + puffersample.aquarium.get(i).y);
+			for (PufferFish each: puffersample.aquarium) {
+				System.out.print(each.namefish + "-y-" + each.y);
 			}
 			System.out.println("-------------------------------------------------------");
 
@@ -98,17 +101,17 @@ public class MainScene extends Scene {
 			if (action.isTrueSide("nam -- R", puffernow.namefish)) {
 				System.out.println("right  " + j);
 				j += 1;
-				for (int i = 0; i < 8; i++) {
-					puffersample.aquarium.set(i, puffersample.aquarium.get(i + 1));
-					puffersample.aquarium.get(i).y += 200f;
+				puffersample.aquarium.remove();
+				for (PufferFish each: puffersample.aquarium) {
+					each.y += 200;
 				}
 				puffersample.randomPuffer();
 			} else {
 				System.out.println("*******************\n" + "******Game Over****\n" + "*******************");
 				action.setScore(0);
 			}
-			for (int i = 0; i < 10; i++) {
-				System.out.print(puffersample.aquarium.get(i).namefish + "-y-" + puffersample.aquarium.get(i).y);
+			for (PufferFish each: puffersample.aquarium) {
+				System.out.print(each.namefish + "-y-" + each.y);
 			}
 			System.out.println("\n-------------------------------------------------------");
 			// batch.draw(ani_bear.getKeyFrame(elapsedTime, true), 500, 300);
