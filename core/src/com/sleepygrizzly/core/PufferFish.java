@@ -15,31 +15,22 @@ public class PufferFish {
 	int screentus;
 	int idfish;
 	int choose;
+	int idbomb;
 	public PufferFish fish;
 	public String namefish;
 	SceneLoader scene;
 	public TransformComponent puffer;
 	public SpriteAnimationStateComponent puffer_ori;
-	/*
-	String[] listpuffer = { "Opurple_R", "Opurple_L", "Opurple_C",
-							"Ored_R", "Ored_L", "Ored_C", 
-							"Oblue_R", "Oblue_L","Oblue_C",
-							"Ogreen_R", "Ogreen_L", "Ogreen_C", 
-							"Oorange_R", "Oorange_L", "Oorange_C" };
-	*/
 	String[] listpuffer = {"Opurple_C", "Ored_C", "Oblue_C","Ogreen_C", "Oorange_C",
 							"Opurple_L","Ored_L","Oblue_L","Ogreen_L","Oorange_L",
 							"Opurple_R","Ored_R","Oblue_R","Ogreen_R","Oorange_R"};
-	/*int[] listid = {13, 23, 16,
-					24,22,18,
-					4,21,14,
-					3,20,17,
-					11,19,15};
-	*/
 	int[] listid = {16,37,14,17,15,
 					23,22,21,20,19,
 					13,24,4,3,11};
-	float[] posi_y = { /*239f,*/173f, 107f, 41f, -25f, -91f, -157f, -223f, -289f };
+	int[] listbomb = { 30, 27, 39, 33, 32,
+						30, 27, 18, 26, 32,
+						34, 38, 39, 33,36};
+	float[] posi_y = { 173f, 107f, 41f, -25f, -91f, -157f, -223f, -289f };
 	Map<String, Integer> posi_x = new HashMap<String, Integer>();
 
 	public Queue<PufferFish> aquarium = new LinkedList<PufferFish>();
@@ -95,9 +86,20 @@ public class PufferFish {
 		System.out.println(listpuffer[choose]);
 	}
 	
+	public void pufferbomb(String bombname){
+		for(int i = 0; i< listpuffer.length;i++){
+			if(listpuffer[i] == bombname){
+				idbomb = listbomb[i];
+				break;
+			}
+		}
+		fish = new PufferFish(scene, bombname, idbomb);
+		fish.createPufferID();
+		fish.puffer.y = 173f;
+	}
+	
 	public void move(){
 		puffer.y += 66f; 
-		//puffer.scaleX
 	}
 	
 	public boolean checksame(String now){

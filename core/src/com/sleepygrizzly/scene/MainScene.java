@@ -2,6 +2,7 @@ package com.sleepygrizzly.scene;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.utils.Timer;
 import com.sleepygrizzly.core.Bear;
 import com.sleepygrizzly.core.CheckAction;
 import com.sleepygrizzly.core.PufferFish;
@@ -32,7 +33,6 @@ public class MainScene extends Scene {
 		scene1.loadScene("Playbearscene");
 		sleepybear = new Bear(scene1, "standybear_R", 10);
 		sleepybear.createBearID();
-		// standybear_R.createBearSprite("standybear");
 		puffersample = new PufferFish(scene1, "puffer_NAM");
 		puffersample.randomFirstTime();
 		action = new CheckAction();
@@ -43,30 +43,26 @@ public class MainScene extends Scene {
 
 	public void render() {
 		elapsedTime += Gdx.graphics.getDeltaTime();
+		Timer timer = new Timer();
+		timer.start();
 		puffernow = puffersample.aquarium.peek();
 		sleepybear.move();
 		if (Gdx.input.isKeyJustPressed(Keys.LEFT)) {
+			System.out.println(timer.toString());
 			puffersample.aquarium.element().puffer.y = -673;
 			puffersample.aquarium.poll();
 			System.out.println("left  " + i);
 			i += 1;
 			if (action.isTrueSide("nam -- L", puffernow.namefish)) {
 				for (PufferFish each: puffersample.aquarium) {
-					//each.y += 114;
-					//each.puffer.y += 114;
 					each.move();
-					//System.out.println(each.namefish +"______________" +each.y);
-					//each.move();
 				}
 				puffersample.randomPuffer();
 			} 
 			else {
 				System.out.println("*******************\n" + "******Game Over****\n" + "*******************");
 				action.setScore(0);
-				//---------try 
-				puffersample.aquarium.poll();
-				puffersample.randomPuffer();
-				//
+				puffernow.pufferbomb(puffernow.namefish);
 
 			}
 			for (PufferFish each: puffersample.aquarium) {
@@ -88,8 +84,7 @@ public class MainScene extends Scene {
 			} else {
 				System.out.println("*******************\n" + "******Game Over****\n" + "*******************");
 				action.setScore(0);
-				puffersample.aquarium.poll();
-				puffersample.randomPuffer();
+				puffernow.pufferbomb(puffernow.namefish);
 			}
 			for (PufferFish each: puffersample.aquarium) {
 				System.out.print(each.namefish + "-y-" + each.puffer.y);

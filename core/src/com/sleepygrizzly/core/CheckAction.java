@@ -20,13 +20,6 @@ public class CheckAction {
 			System.out.println("Score:  " + score);
 			return true;
 		} 
-		/*else if (pufferside.charAt(pufferside.length() - 1) == 'C') {
-			System.out.println("TRUE -- C" + "  bearside: " + bearside + " | pufferside: " + pufferside);
-			score += 1;
-			System.out.println("Score:  " + score);
-			return true;
-		
-		}*/ 
 		else {
 			System.out.println("FALSE -- " + "  bearside: " + bearside + " | pufferside: " + pufferside);
 			System.out.println("Score:(same)  " + score);

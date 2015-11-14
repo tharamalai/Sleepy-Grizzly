@@ -35,13 +35,6 @@ public class Bear {
 		bear = ComponentRetriever.get(scene.entityFactory.getEntityByUniqueId(id), TransformComponent.class);
 	}
 
-	public void createBearSrite(String filename) {
-		img_bear = new Texture("data/" + filename + "/" + filename + ".png");
-		sp_bear = new Sprite(img_bear);
-		at_bear = new TextureAtlas(Gdx.files.internal("data/" + filename + "/" + filename + ".atlas"));
-		ani_bear = new Animation(1 / 15f, at_bear.getRegions());
-	}
-
 	public void move() {
 		if (Gdx.input.isKeyJustPressed(Keys.RIGHT)) {
 			bear.x = 270;
