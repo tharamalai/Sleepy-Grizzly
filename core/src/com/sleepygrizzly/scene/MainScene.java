@@ -2,6 +2,7 @@ package com.sleepygrizzly.scene;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.utils.Timer;
 import com.sleepygrizzly.core.Bear;
 import com.sleepygrizzly.core.CheckAction;
@@ -12,11 +13,6 @@ import com.uwsoft.editor.renderer.components.sprite.SpriteAnimationStateComponen
 
 public class MainScene extends Scene {
 
-	TransformComponent bear_l;
-	SpriteAnimationStateComponent bearstate_l;
-	TransformComponent bear_r;
-	SpriteAnimationStateComponent bearstate_r;
-
 	private float elapsedTime = 0;
 
 	Bear sleepybear;
@@ -24,6 +20,10 @@ public class MainScene extends Scene {
 	String status = "playing";
 	PufferFish puffersample;
 	PufferFish puffernow;
+	Sound waterfallsound;
+	Sound birdsound;
+	Sound bubblesound;
+	Sound bombsound;
 
 	public MainScene(SceneManage sm, SceneLoader sl) {
 		super(sm, sl);
@@ -36,6 +36,13 @@ public class MainScene extends Scene {
 		puffersample = new PufferFish(scene1, "puffer_NAM");
 		puffersample.randomFirstTime();
 		action = new CheckAction();
+		waterfallsound = Gdx.audio.newSound(Gdx.files.internal("data/sound/waterfallsound.mp3"));
+		birdsound = Gdx.audio.newSound(Gdx.files.internal("data/sound/birdsound.mp3"));
+		bubblesound = Gdx.audio.newSound(Gdx.files.internal("data/sound/bubblesound.mp3"));
+		bombsound = Gdx.audio.newSound(Gdx.files.internal("data/sound/bombsound.mp3"));
+		
+		waterfallsound.loop();
+		birdsound.loop();
 	}
 
 	int i;
@@ -43,12 +50,10 @@ public class MainScene extends Scene {
 
 	public void render() {
 		elapsedTime += Gdx.graphics.getDeltaTime();
-		Timer timer = new Timer();
-		timer.start();
 		puffernow = puffersample.aquarium.peek();
 		sleepybear.move();
 		if (Gdx.input.isKeyJustPressed(Keys.LEFT)) {
-			System.out.println(timer.toString());
+			bubblesound.play();
 			puffersample.aquarium.element().puffer.y = -673;
 			puffersample.aquarium.poll();
 			System.out.println("left  " + i);
@@ -63,6 +68,8 @@ public class MainScene extends Scene {
 				System.out.println("*******************\n" + "******Game Over****\n" + "*******************");
 				action.setScore(0);
 				puffernow.pufferbomb(puffernow.namefish);
+				bombsound.play();
+				waterfallsound.stop();
 
 			}
 			for (PufferFish each: puffersample.aquarium) {
@@ -72,6 +79,7 @@ public class MainScene extends Scene {
 
 		}
 		if (Gdx.input.isKeyJustPressed(Keys.RIGHT)) {
+			bubblesound.play();
 			puffersample.aquarium.element().puffer.y = -673;
 			puffersample.aquarium.poll();
 			if (action.isTrueSide("nam -- R", puffernow.namefish)) {
@@ -85,6 +93,8 @@ public class MainScene extends Scene {
 				System.out.println("*******************\n" + "******Game Over****\n" + "*******************");
 				action.setScore(0);
 				puffernow.pufferbomb(puffernow.namefish);
+				bombsound.play();
+				waterfallsound.stop();
 			}
 			for (PufferFish each: puffersample.aquarium) {
 				System.out.print(each.namefish + "-y-" + each.puffer.y);
