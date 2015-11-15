@@ -52,9 +52,6 @@ public class HomeGame extends Game {
 
 	}
 
-	int i;
-	int j;
-
 	@Override
 	public void render() {
 		Gdx.gl.glClearColor(0, 0, 0, 1);

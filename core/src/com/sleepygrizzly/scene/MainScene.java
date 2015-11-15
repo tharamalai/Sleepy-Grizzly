@@ -28,12 +28,13 @@ public class MainScene extends Scene {
 	Sound bubblesound;
 	Sound bombsound;
 	BitmapFont scorefont;
-	Timer gametime;
 	long starttime;
+	float owl = 50;
 	SpriteBatch batch;
 
 	public MainScene(SceneManage sm, SceneLoader sl) {
 		super(sm, sl);
+		
 	}
 
 	public void create() {
@@ -45,25 +46,28 @@ public class MainScene extends Scene {
 		puffersample = new PufferFish(scene1, "puffer_NAM");
 		puffersample.randomFirstTime();
 		action = new CheckAction();
-		gametime = new Timer();
 		waterfallsound = Gdx.audio.newSound(Gdx.files.internal("data/sound/waterfallsound.mp3"));
 		birdsound = Gdx.audio.newSound(Gdx.files.internal("data/sound/birdsound.mp3"));
 		bubblesound = Gdx.audio.newSound(Gdx.files.internal("data/sound/bubblesound.mp3"));
 		bombsound = Gdx.audio.newSound(Gdx.files.internal("data/sound/bombsound.mp3"));
 		waterfallsound.loop();
 		birdsound.loop();
-		gametime.start();
+		starttime = System.currentTimeMillis();
 	}
 	public void render() {
 		elapsedTime += Gdx.graphics.getDeltaTime();
 		puffernow = puffersample.aquarium.peek();
 		sleepybear.move();
+		if(owl>0){
+			owl -= (float)(((System.currentTimeMillis() - starttime)/1000)*0.01);
+		}
 		if (Gdx.input.isKeyJustPressed(Keys.LEFT)) {
 			bubblesound.play();
 			puffersample.aquarium.element().puffer.y = -173f;
 			//puffersample.aquarium.element().move();
 			pufferold = puffersample.aquarium.poll();
 			if (action.isTrueSide("L", puffernow.namefish)) {
+				owl += 1;
 				for (PufferFish each: puffersample.aquarium) {
 					each.move();
 				}
@@ -75,8 +79,7 @@ public class MainScene extends Scene {
 				puffernow.pufferbomb(puffernow.namefish);
 				bombsound.play();
 				waterfallsound.stop();
-				gametime.stop();
-				System.out.println("Game Timer....." + gametime.toString());
+				owl = 0;
 
 			}
 			for (PufferFish each: puffersample.aquarium) {
@@ -92,6 +95,7 @@ public class MainScene extends Scene {
 			pufferold = puffersample.aquarium.poll();
 			if (action.isTrueSide("R", puffernow.namefish)) {
 				for (PufferFish each: puffersample.aquarium) {
+					owl += 1;
 					each.move();
 				}
 				puffersample.randomPuffer();
@@ -101,7 +105,7 @@ public class MainScene extends Scene {
 				puffernow.pufferbomb(puffernow.namefish);
 				bombsound.play();
 				waterfallsound.stop();
-				System.out.println("Game Timer....." + gametime.toString());
+				owl = 0;
 			}
 			for (PufferFish each: puffersample.aquarium) {
 				System.out.print(each.namefish + "-y-" + each.puffer.y);
@@ -109,8 +113,23 @@ public class MainScene extends Scene {
 			
 			System.out.println("\n-------------------------------------------------------");
 		}
+		if(owl < 0){
+			puffersample.aquarium.element().puffer.y = -173f;
+			pufferold = puffersample.aquarium.poll();
+			System.out.println("*******************\n" + "******Game Over****\n" + "*******************");
+			//action.setScore(0);
+			puffernow.pufferbomb(puffernow.namefish);
+			bombsound.play();
+			waterfallsound.stop();
+			owl = 0;
+		}
+		if(owl>100){
+			owl = 100;
+		}
 		batch.begin();
 		scorefont.draw(batch, "SCORE: " + action.getScore(), 50f, 650f);
+		scorefont.draw(batch, "TIME: " + ((System.currentTimeMillis() - starttime)/ 1000), 500f, 650f);
+		scorefont.draw(batch, "OWL: " + owl +"%", 500f, 450f);
 		batch.end();
 	}
 
