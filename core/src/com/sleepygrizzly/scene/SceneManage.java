@@ -33,6 +33,9 @@ public class SceneManage {
 		} else if (s_level.equals("play")) {
 			currentLevel = new PlayScene(this, sl);
 		}
+		else if (s_level.equals("menu")) {
+			currentLevel = new MenuScene(this, sl);
+		}
 		currentLevel.create();
 	}
 }
