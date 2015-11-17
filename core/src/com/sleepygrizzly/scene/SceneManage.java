@@ -18,7 +18,7 @@ public class SceneManage {
 	public SceneManage(SceneLoader sl) {
 		this.sl = sl;
 		s_level = "main";
-		currentLevel = new MainScene(this, sl);
+		currentLevel = new MenuScene(this, sl);
 		currentLevel.create();
 	}
 
@@ -32,10 +32,10 @@ public class SceneManage {
 			currentLevel = new MainScene(this, sl);
 		} else if (s_level.equals("play")) {
 			currentLevel = new PlayScene(this, sl);
-		}
-		else if (s_level.equals("menu")) {
+		} else if (s_level.equals("menu")) {
 			currentLevel = new MenuScene(this, sl);
-		}
+		} 
+			
 		currentLevel.create();
 	}
 }
