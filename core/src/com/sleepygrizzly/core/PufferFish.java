@@ -30,7 +30,7 @@ public class PufferFish {
 	int[] listbomb = { 30, 27, 39, 33, 32,
 						30, 27, 18, 26, 32,
 						34, 38, 39, 33,36};
-	float[] posi_y = { 173f, 107f, 41f, -25f, -91f, -157f, -223f, -289f };
+	float[] posi_y = { 321f, 233f, 145f, 57f, -31f, -119f, -207f,-295f };
 	Map<String, Integer> posi_x = new HashMap<String, Integer>();
 
 	public Queue<PufferFish> aquarium = new LinkedList<PufferFish>();
@@ -81,7 +81,7 @@ public class PufferFish {
 		}while(checksame(listpuffer[choose]));
 		fish = new PufferFish(scene, listpuffer[choose],listid[choose]);
 		fish.createPufferID();
-		fish.puffer.y = -289f;
+		fish.puffer.y = -295f;
 		aquarium.add(fish);
 		System.out.println(listpuffer[choose]);
 	}
@@ -95,11 +95,11 @@ public class PufferFish {
 		}
 		fish = new PufferFish(scene, bombname, idbomb);
 		fish.createPufferID();
-		fish.puffer.y = 173f;
+		fish.puffer.y = 321f;
 	}
 	
 	public void move(){
-		puffer.y += 66f; 
+		puffer.y += 88f; 
 	}
 	
 	public boolean checksame(String now){

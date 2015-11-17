@@ -11,7 +11,7 @@ public class PlayScene extends Scene {
 
 	@Override
 	public void create() {
-		scene1.loadScene("Playbearscene");
+		scene1.loadScene("mainsceen");
 	}
 
 	@Override

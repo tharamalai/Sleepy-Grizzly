@@ -1,6 +1,6 @@
 package com.sleepygrizzly.core;
 
-public class CheckAction {
+public class checkAction {
 	private String bearside;
 	private String pufferside;
 	private Integer score = 0;

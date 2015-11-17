@@ -33,15 +33,16 @@ public class Bear {
 		bear_ori = ComponentRetriever.get(scene.entityFactory.getEntityByUniqueId(id),
 				SpriteAnimationStateComponent.class);
 		bear = ComponentRetriever.get(scene.entityFactory.getEntityByUniqueId(id), TransformComponent.class);
+		bear.y = 330f;
 	}
 
 	public void move() {
 		if (Gdx.input.isKeyJustPressed(Keys.RIGHT)) {
-			bear.x = 270;
+			bear.x = 410;
 			bear.scaleX = -Math.abs(bear.scaleX);
 		}
 		if (Gdx.input.isKeyJustPressed(Keys.LEFT)) {
-			bear.x = -50;
+			bear.x = 90;
 			bear.scaleX = Math.abs(bear.scaleX);
 		}
 	}
