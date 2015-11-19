@@ -1,89 +1,89 @@
 waterfall.png
-size: 426, 305
+size: 426, 303
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
 waterfall01
   rotate: false
-  xy: 0, 1
-  size: 426, 305
-  orig: 426, 305
+  xy: 0, 0
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
 waterfall02
   rotate: false
-  xy: 426, 1
-  size: 426, 305
-  orig: 426, 305
+  xy: 426, 0
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
 waterfall03
   rotate: false
-  xy: 852, 1
-  size: 426, 305
-  orig: 426, 305
+  xy: 852, 0
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
 waterfall04
   rotate: false
-  xy: 1278, 1
-  size: 426, 305
-  orig: 426, 305
+  xy: 1278, 0
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
 waterfall05
  rotate: false
-  xy: 0, 306
-  size: 426, 305
-  orig: 426, 305
+  xy: 0, 303
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
 waterfall06
   rotate: false
-  xy: 426, 306
-  size: 426, 305
-  orig: 426, 305
+  xy: 426, 303
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
 waterfall07
   rotate: false
-  xy: 852, 306
-  size: 426, 305
-  orig: 426, 305
+  xy: 852, 303
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
 waterfall08
   rotate: false
-  xy: 1278, 306
-  size: 426, 305
-  orig: 426, 305
+  xy: 1278, 303
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
  waterfall09
   rotate: false
-  xy: 0, 611
-  size: 426, 305
-  orig: 426, 305
+  xy: 0, 606
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
  waterfall10
   rotate: false
-  xy: 426, 611
-  size: 426, 305
-  orig: 426, 305
+  xy: 426, 606
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
  waterfall11
   rotate: false
-  xy: 852, 611
-  size: 426, 305
-  orig: 426, 305
+  xy: 852, 606
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1
  waterfall12
   rotate: false
-  xy: 1278, 611
-  size: 426, 305
-  orig: 426, 305
+  xy: 1278, 606
+  size: 426, 303
+  orig: 426, 303
   offset: 0, 0
   index: -1

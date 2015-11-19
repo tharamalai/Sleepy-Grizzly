@@ -23,7 +23,6 @@ public class PlayScene extends Scene {
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
 		
 	}
 

@@ -34,6 +34,14 @@ public class SceneManage {
 			currentLevel = new PlayScene(this, sl);
 		} else if (s_level.equals("menu")) {
 			currentLevel = new MenuScene(this, sl);
+		} else if (s_level.equals("howtoplay")) {
+			currentLevel = new HowtoScene(this, sl);
+		} else if (s_level.equals("yourscore")) {
+			currentLevel = new YourScoreScene(this, sl);
+		} else if (s_level.equals("microwave")) {
+			currentLevel = new KitchenScene(this, sl);
+		} else if (s_level.equals("contact")) {
+			currentLevel = new ContactScene(this, sl);
 		} 
 			
 		currentLevel.create();

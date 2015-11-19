@@ -12,7 +12,7 @@ import com.uwsoft.editor.renderer.SceneLoader;
 public class HomeGame extends Game {
 	private SceneLoader scene1;
 	private Viewport vp;
-
+	public Person person;
 	SpriteBatch batch;
 
 	private SceneManage sm;
@@ -21,6 +21,7 @@ public class HomeGame extends Game {
 	public void create() {
 		scene1 = new SceneLoader();
 		sm = new SceneManage(scene1);
+		person = new Person("person", 0);
 	}
 
 	@Override

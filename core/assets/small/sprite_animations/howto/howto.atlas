@@ -1,0 +1,20 @@
+
+howto.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+howto01
+  rotate: false
+  xy: 2, 2
+  size: 494, 205
+  orig: 494, 205
+  offset: 0, 0
+  index: -1
+howto02
+  rotate: false
+  xy: 498, 2
+  size: 494, 205
+  orig: 494, 205
+  offset: 0, 0
+  index: -1

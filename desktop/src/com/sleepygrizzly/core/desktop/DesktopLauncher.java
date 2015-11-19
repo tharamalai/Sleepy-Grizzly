@@ -2,7 +2,6 @@ package com.sleepygrizzly.core.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.sleepygrizzly.core.DrawObject;
 import com.sleepygrizzly.core.HomeGame;
 
 

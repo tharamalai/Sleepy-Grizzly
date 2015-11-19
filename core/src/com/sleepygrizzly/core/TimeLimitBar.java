@@ -6,7 +6,6 @@ public class TimeLimitBar {
 	public TimeLimitBar(Bear bearpointer){
 		this.bearpointer = bearpointer;
 	}
-	//x = 501 y= 221 range = 280f
 	public void createBar(){
 		bearpointer.createBearID();
 	}
